@@ -16,19 +16,19 @@ function move(element) {
 
     function moveCharacter(){ 
         if(direction === 'west'){
-            x = x - 1
+            x-=1
         }
         if(direction === 'north'){
-            y = y + 1
+            y+=1
         }
         if(direction === 'east'){
-            x = x + 1
+            x+=1
         }
         if(direction === 'south'){
-            y = y - 1
+            y-=1
         }
-        character.style.left = x + 'px'
-        character.style.bottom = y + 'px'
+        element.style.left = x + 'px'
+        element.style.bottom = y + 'px'
     }
     
     setInterval(moveCharacter, 1)                                    
